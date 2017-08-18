@@ -91,6 +91,8 @@ $(document).ready(function() {
             dataType: "json",
             success: function(data){
                 console.log(data);
+                $('#dialog_reg').dialog('close');
+                alert('Baba Nam Kevalam');
             },
             failure: function(errMsg) {
                 alert(errMsg);
