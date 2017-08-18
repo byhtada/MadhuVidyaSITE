@@ -4,6 +4,13 @@
         <meta charset="UTF-8" />
         <title>Madhu Vidya</title>
         <link rel="stylesheet" type="text/css" href="css/main.css">
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+
+        <script src="js/jquery-3.2.1.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/jquery.base64.js"></script>
+        <script src="js/jquery-ui.min.js"></script>
+        <link href="js/jquery-ui.css" rel="stylesheet" type="text/css"/>
 
         <script type="text/javascript" src="http://scriptjava.net/source/scriptjava/scriptjava.js"></script>
         <script src="https://vk.com/js/api/xd_connection.js?2"  type="text/javascript"></script>
@@ -13,8 +20,8 @@
         <!-- Optional theme -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+   </head>
 
-    </head>
     <body>
         <div style="background: url('img/main_background.jpg') 100% 100% no-repeat; background-size:cover; height: 1080px;">
             <p class="text-center" style="font-size: 75px; color: white; margin: auto">Киртан спасет Мир!</p>
@@ -43,10 +50,33 @@
             <div class="row">
                 <div class="col-xs-3"></div>
                 <div class="col-xs-6">
-                    <button type="button" class="btn btn-success btn-lg btn-block" id="btn_shop_tails_buy">Баба Нам Кевалам!</button>
+                    <button id="btn_reg" type="button" class="btn btn-success btn-lg btn-block" >Баба Нам Кевалам!</button>
+                    <div id="dialog_reg" hidden>
+                        <form>
+                            <div class="form-group">
+                                <label for="reg_name">Ваше Имя</label>
+                                <input type="email" class="form-control" id="reg_name" placeholder="Имя">
+                            </div>
+                            <div class="form-group">
+                                <label for="reg_email">Почта</label>
+                                <input type="email" class="form-control" id="reg_email" placeholder="Почта">
+                            </div>
+                            <div class="form-group">
+                                <label for="reg_pass">Пароль</label>
+                                <input type="password" class="form-control" id="reg_pass" placeholder="Пароль">
+                            </div>
+                            <div class="checkbox">
+                                <label><input type="checkbox">Всегда быть рядом</label>
+                            </div>
+                            <button id="btn_reg_now" type="submit" class="btn btn-warning btn-lg">Присоеденится!</button>
+                        </form>
+                    </div>
                 </div>
                 <div class="col-xs-3"></div>
             </div>
+
+
+
 
         </div>
     </body>
