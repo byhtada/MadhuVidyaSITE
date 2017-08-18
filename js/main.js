@@ -81,8 +81,6 @@ $(document).ready(function() {
         pass = $('#reg_pass').val();
         var mitra = {name: name, password: pass,  email: email};
 
-        var base6 = vk_id + ":" + vk_auth_key;
-
         $.ajax({
             type: "POST",
             url: "https://madhu-vidya-api.herokuapp.com/mitras",
